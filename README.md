@@ -1,6 +1,6 @@
 # Octopus Deploy Decryptor
 
-This tool allows for decrypting projects exported from Octopus Deploy.
+This tool allows for decrypting projects exported from [Octopus Deploy](https://octopus.com).
 
 It also provides modules to this manually for to decrypt values
 form the database, using the master key.

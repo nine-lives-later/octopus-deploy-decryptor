@@ -7,13 +7,8 @@ import (
 	"os"
 )
 
-const (
-	ExpectedVersion = 2
-)
-
 type VariableSet struct {
 	Id        string      `json:"Id"`
-	Version   int         `json:"Version"`
 	Variables []*Variable `json:"Variables"`
 }
 
@@ -43,10 +38,6 @@ func ReadVariables(filename string) ([]*Variable, error) {
 	err = json.Unmarshal(data, &set)
 	if err != nil {
 		return nil, fmt.Errorf("failed to parse file '%v': %w", filename, err)
-	}
-
-	if set.Version != ExpectedVersion {
-		return nil, fmt.Errorf("version mismatch: expected '%v', but got '%v'", ExpectedVersion, set.Version)
 	}
 
 	return set.Variables, nil

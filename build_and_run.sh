@@ -13,6 +13,6 @@ go fmt ./... > /dev/null
 # print the variables
 pushd ./Octopus-Export-Example > /dev/null
 
-../octopus-deploy-decryptor -password 'pass!w0rd'
+../octopus-deploy-decryptor -password 'pass!w0rd' $*
 
 popd > /dev/null

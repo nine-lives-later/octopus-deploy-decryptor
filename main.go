@@ -17,6 +17,7 @@ var (
 
 func mainInternal() error {
 	password := flag.String("password", "", "The password used when exporting the project.")
+	sensitiveOnly := flag.Bool("sensitive-only", false, "Only show sensitive variables.")
 
 	flag.Parse()
 
@@ -57,6 +58,10 @@ func mainInternal() error {
 		}
 
 		for _, v := range set {
+			if *sensitiveOnly && v.Type != "Sensitive" {
+				continue
+			}
+
 			val, err := v.DecryptedValue(key)
 			if err != nil {
 				log.Printf("Failed to decrypt variable '%v': %v", v.Name, err)
@@ -67,9 +72,9 @@ func mainInternal() error {
 				scope = strings.ReplaceAll(scope, "\n", " ")
 				scope = scopeCleanupPattern.ReplaceAllString(scope, " ")
 
-				log.Printf("Variable: %v = '%v' [scope: %+v]", v.Name, val, scope)
+				log.Printf("  Variable: %v = '%v' [scope: %+v]", v.Name, val, scope)
 			} else {
-				log.Printf("Variable: %v = '%v' [scope: none]", v.Name, val)
+				log.Printf("  Variable: %v = '%v' [scope: none]", v.Name, val)
 			}
 		}
 	}

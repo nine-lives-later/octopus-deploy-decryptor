@@ -11,10 +11,11 @@ form the database, using the master key.
 2. Run the tool within the directory of the unzipped project export:
 
 ```sh
-octopus-deploy-decryptor -password 'password'
+octopus-deploy-decryptor --password 'password' --sensitive-only
 ```
 
 Make sure to provide the correct password used during export.
+The `sensitive-only` option will limit the shown values to sensitive variables.
 
 More on how to export projects can be found here: https://octopus.com/docs/projects/export-import
 

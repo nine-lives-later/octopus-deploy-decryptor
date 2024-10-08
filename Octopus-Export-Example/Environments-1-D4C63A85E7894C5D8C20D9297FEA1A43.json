@@ -1,0 +1,14 @@
+{
+  "Type": "Static",
+  "Id": "Environments-1-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "Name": "Example DEV",
+  "Description": "",
+  "SortOrder": 0,
+  "UseGuidedFailure": false,
+  "Slug": "example-dev",
+  "AllowDynamicInfrastructure": false,
+  "SpaceId": "Spaces-1-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "ExtensionSettings": [],
+  "LastModified": "0001-01-01T00:00:00+00:00",
+  "DataVersion": "AAAAAAABMOw="
+}

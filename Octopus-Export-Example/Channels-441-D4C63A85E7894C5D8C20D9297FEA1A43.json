@@ -1,0 +1,16 @@
+{
+  "SpaceId": "Spaces-1-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "Id": "Channels-441-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "Name": "Default",
+  "Description": null,
+  "Slug": "default",
+  "ProjectId": "Projects-441-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "LifecycleId": null,
+  "IsDefault": true,
+  "TenantTags": [],
+  "Rules": [],
+  "GitReferenceRules": [],
+  "GitResourceRules": [],
+  "LastModified": "2024-10-08T07:45:45.2999027+00:00",
+  "DataVersion": "AAAAAAAIhOw="
+}

@@ -1,0 +1,21 @@
+{
+  "SpaceId": "Spaces-1-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "ProjectId": "Projects-441-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "Id": "deploymentsettings-Projects-441-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "VersioningStrategy": {
+    "DonorPackage": null,
+    "Template": "#{Octopus.Version.LastMajor}.#{Octopus.Version.LastMinor}.#{Octopus.Version.NextPatch}"
+  },
+  "ReleaseNotesTemplate": null,
+  "DefaultToSkipIfAlreadyInstalled": false,
+  "ConnectivityPolicy": {
+    "SkipMachineBehavior": "None",
+    "TargetRoles": [],
+    "AllowDeploymentsToNoTargets": true,
+    "ExcludeUnhealthyTargets": false
+  },
+  "DeploymentChangesTemplate": null,
+  "DefaultGuidedFailureMode": "EnvironmentDefault",
+  "ForcePackageDownload": false,
+  "DataVersion": "AAAAAAAIhO0="
+}

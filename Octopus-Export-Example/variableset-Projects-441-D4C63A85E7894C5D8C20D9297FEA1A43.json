@@ -1,0 +1,89 @@
+{
+  "Id": "variableset-Projects-441-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "OwnerId": "Projects-441-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "OwnerType": "Project",
+  "Version": 2,
+  "Variables": [
+    {
+      "Id": "73463682-ddf2-5045-c61f-3a382cbb8577",
+      "Name": "ScopedValue",
+      "Description": null,
+      "Type": "String",
+      "Value": "dev_value",
+      "Scope": {
+        "Environment": [
+          "Environments-1-D4C63A85E7894C5D8C20D9297FEA1A43"
+        ]
+      }
+    },
+    {
+      "Id": "007e2353-5328-3aeb-d816-d7903bdf58f3",
+      "Name": "ScopedValue",
+      "Description": null,
+      "Type": "String",
+      "Value": "prod_value",
+      "Scope": {
+        "Environment": [
+          "Environments-21-D4C63A85E7894C5D8C20D9297FEA1A43"
+        ]
+      }
+    },
+    {
+      "Id": "36046810-4a3e-7076-487f-4f28ebf12bea",
+      "Name": "ScopedValue",
+      "Description": null,
+      "Type": "String",
+      "Value": "other_value"
+    },
+    {
+      "Id": "4868560b-57da-0089-ef1a-de24bfb0294e",
+      "Name": "PlainText",
+      "Description": null,
+      "Type": "String",
+      "Value": "hello_world"
+    },
+    {
+      "Id": "b26fd08b-6a4a-da57-c9e1-66f81045de6a",
+      "Name": "ScopedSensitiveValue",
+      "Description": null,
+      "Type": "Sensitive",
+      "Value": "jIFNeZoCwhBs/FBmdrC5Sg==|4JjsV+lp/V9+dqKHe1yGcw==",
+      "Scope": {
+        "Environment": [
+          "Environments-1-D4C63A85E7894C5D8C20D9297FEA1A43"
+        ]
+      }
+    },
+    {
+      "Id": "32058c50-4363-f75f-4888-68e2a01bd62d",
+      "Name": "ScopedSensitiveValue",
+      "Description": null,
+      "Type": "Sensitive",
+      "Value": "cUxQfdiQQK8adWHhQTtbrw==|9v1SUVFm0RqihpJS9vtHKQ==",
+      "Scope": {
+        "Environment": [
+          "Environments-21-D4C63A85E7894C5D8C20D9297FEA1A43"
+        ]
+      }
+    },
+    {
+      "Id": "60e2bbef-eb05-c65c-7540-96c0bb7d7238",
+      "Name": "ScopedSensitiveValue",
+      "Description": null,
+      "Type": "Sensitive",
+      "Value": "0ZnH61OawGaC0VI6qZKjyw==|0jU803niVLq2F+kWj4Fg2Q=="
+    },
+    {
+      "Id": "332cba5d-1abc-66df-db64-10aad5f79aee",
+      "Name": "SensitiveValue",
+      "Description": null,
+      "Type": "Sensitive",
+      "Value": "KSqjoSHipI2x1CrQTiFArw==|gWFgJCLGJF9OeK8YwJK0nA=="
+    }
+  ],
+  "SpaceId": "Spaces-1-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "RelatedDocumentIds": [
+    "Environments-1-D4C63A85E7894C5D8C20D9297FEA1A43",
+    "Environments-21-D4C63A85E7894C5D8C20D9297FEA1A43"
+  ]
+}

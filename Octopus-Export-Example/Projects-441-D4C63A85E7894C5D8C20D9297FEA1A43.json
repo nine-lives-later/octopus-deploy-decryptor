@@ -1,0 +1,37 @@
+{
+  "SpaceId": "Spaces-1-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "Id": "Projects-441-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "Name": "ExampleProject",
+  "Slug": "exampleproject",
+  "Description": "",
+  "ExecuteDeploymentsOnResilientPipeline": null,
+  "IsDisabled": false,
+  "VariableSetId": "variableset-Projects-441-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "DeploymentProcessId": "deploymentprocess-Projects-441-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "DeploymentSettingsId": "deploymentsettings-Projects-441-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "ClonedFromProjectId": null,
+  "ProjectGroupId": "ProjectGroups-1-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "LifecycleId": "Lifecycles-1-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "AutoCreateRelease": false,
+  "PersistenceSettings": {
+    "Type": "Database"
+  },
+  "DynamicEnvironmentSettings": {
+    "ProvisioningRunbook": null,
+    "DeprovisioningRunbook": null
+  },
+  "DiscreteChannelRelease": false,
+  "IncludedLibraryVariableSetIds": [],
+  "UsedPackages": [],
+  "TenantedDeploymentMode": "Untenanted",
+  "Templates": [],
+  "ReleaseCreationStrategy": {
+    "ReleaseCreationPackage": null,
+    "ChannelId": null
+  },
+  "AutoDeployReleaseOverrides": [],
+  "ExtensionSettings": [],
+  "AllowIgnoreChannelRules": false,
+  "LastModified": "2024-10-08T07:45:45.2165252+00:00",
+  "DataVersion": "AAAAAAAIhPM="
+}

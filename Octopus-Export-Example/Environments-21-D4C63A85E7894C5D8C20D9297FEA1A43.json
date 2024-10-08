@@ -1,0 +1,14 @@
+{
+  "Type": "Static",
+  "Id": "Environments-21-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "Name": "Example PROD",
+  "Description": "",
+  "SortOrder": 1,
+  "UseGuidedFailure": false,
+  "Slug": "example-prod",
+  "AllowDynamicInfrastructure": true,
+  "SpaceId": "Spaces-1-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "ExtensionSettings": [],
+  "LastModified": "0001-01-01T00:00:00+00:00",
+  "DataVersion": "AAAAAAABMO0="
+}

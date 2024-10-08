@@ -1,0 +1,54 @@
+{
+  "Id": "Lifecycles-1-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "Name": "Example",
+  "Description": "",
+  "Phases": [
+    {
+      "Id": "10b7069c-2eb3-4314-a0ca-c4af652af2d7",
+      "Name": "DEV",
+      "AutomaticDeploymentTargets": [
+        "Environments-1-D4C63A85E7894C5D8C20D9297FEA1A43"
+      ],
+      "OptionalDeploymentTargets": [],
+      "MinimumEnvironmentsBeforePromotion": 0,
+      "IsOptionalPhase": false,
+      "IsPriorityPhase": false,
+      "ReleaseRetentionPolicy": null,
+      "TentacleRetentionPolicy": null
+    },
+    {
+      "Id": "faab51ce-ab1d-4505-8201-c5c4273dc71f",
+      "Name": "PROD",
+      "AutomaticDeploymentTargets": [],
+      "OptionalDeploymentTargets": [
+        "Environments-21-D4C63A85E7894C5D8C20D9297FEA1A43"
+      ],
+      "MinimumEnvironmentsBeforePromotion": 0,
+      "IsOptionalPhase": false,
+      "IsPriorityPhase": false,
+      "ReleaseRetentionPolicy": {
+        "Unit": "Days",
+        "QuantityToKeep": 0,
+        "ShouldKeepForever": true
+      },
+      "TentacleRetentionPolicy": {
+        "Unit": "Days",
+        "QuantityToKeep": 0,
+        "ShouldKeepForever": true
+      }
+    }
+  ],
+  "ReleaseRetentionPolicy": {
+    "Unit": "Days",
+    "QuantityToKeep": 365,
+    "ShouldKeepForever": false
+  },
+  "TentacleRetentionPolicy": {
+    "Unit": "Days",
+    "QuantityToKeep": 365,
+    "ShouldKeepForever": false
+  },
+  "Slug": "example",
+  "SpaceId": "Spaces-1-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "DataVersion": "AAAAAAABKts="
+}

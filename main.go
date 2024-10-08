@@ -82,6 +82,8 @@ func mainInternal() error {
 }
 
 func main() {
+	log.SetOutput(os.Stdout)
+
 	err := mainInternal()
 	if err != nil {
 		log.Printf("UNEXPECTED ERROR: %v", err)

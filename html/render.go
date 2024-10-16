@@ -7,6 +7,7 @@ import (
 	"github.com/nine-lives-later/octopus-deploy-decryptor/pkg/projectExport"
 	"html/template"
 	"log"
+	"strings"
 )
 
 var (
@@ -70,6 +71,7 @@ func buildViewModel_ProjectVariableSet(entities projectExport.EntityMap, p *proj
 		variables = append(variables, map[string]any{
 			"Name":  v.Name,
 			"Value": decryptedValue(v, key),
+			"Scope": buildViewModel_VariableScope(entities, &v.Scope),
 		})
 	}
 
@@ -107,6 +109,7 @@ func buildViewModel_ProjectLibraryVariableSets(entities projectExport.EntityMap,
 			variables = append(variables, map[string]any{
 				"Name":  v.Name,
 				"Value": decryptedValue(v, key),
+				"Scope": buildViewModel_VariableScope(entities, &v.Scope),
 			})
 		}
 
@@ -119,4 +122,31 @@ func buildViewModel_ProjectLibraryVariableSets(entities projectExport.EntityMap,
 	}
 
 	return ret
+}
+
+func buildViewModel_VariableScope(entities projectExport.EntityMap, scope *projectExport.VariableScope) string {
+	if scope == nil {
+		return ""
+	}
+
+	var ret strings.Builder
+
+	if len(scope.EnvironmentIDs) > 0 {
+		//ret.WriteString("Environment: ")
+
+		for i, id := range scope.EnvironmentIDs {
+			if i > 0 {
+				ret.WriteString(", ")
+			}
+
+			name := id
+			if e := entities[id].(*projectExport.Environment); e != nil {
+				name = e.EntityName()
+			}
+
+			ret.WriteString(name)
+		}
+	}
+
+	return ret.String()
 }

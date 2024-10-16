@@ -48,14 +48,18 @@ func (v *VariableSet) AddToEntityMap(m EntityMap) {
 }
 
 type Variable struct {
-	Id    string          `json:"Id"`
-	Name  string          `json:"Name"`
-	Type  string          `json:"Type"`
-	Value string          `json:"Value"`
-	Scope json.RawMessage `json:"Scope"`
+	Id    string        `json:"Id"`
+	Name  string        `json:"Name"`
+	Type  string        `json:"Type"`
+	Value string        `json:"Value"`
+	Scope VariableScope `json:"Scope"`
 
 	// injected by `ReadVariableSet()`
 	SpaceId string `json:"-"`
+}
+
+type VariableScope struct {
+	EnvironmentIDs []string `json:"Environment"`
 }
 
 var (

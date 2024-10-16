@@ -28,7 +28,11 @@
       <div>ID: {{ .ProjectVariableSet.ID }}</div>
       <ul>
         {{ range .ProjectVariableSet.Variables }}
+          {{ if .Scope }}
+            <li><pre>{{ .Name }} [{{ .Scope }}] = {{ .Value }}</pre></li>
+          {{ else }}
             <li><pre>{{ .Name }} = {{ .Value }}</pre></li>
+          {{ end }}
         {{ end }}
       </ul>
     {{ end }}
@@ -39,7 +43,11 @@
       <div>ID: {{ .ID }}</div>
       <ul>
         {{ range .Variables }}
+          {{ if .Scope }}
+            <li><pre>{{ .Name }} [{{ .Scope }}] = {{ .Value }}</pre></li>
+          {{ else }}
             <li><pre>{{ .Name }} = {{ .Value }}</pre></li>
+          {{ end }}
         {{ end }}
       </ul>
     {{ end }}

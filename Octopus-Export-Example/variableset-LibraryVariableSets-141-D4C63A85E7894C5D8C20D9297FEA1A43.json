@@ -1,0 +1,24 @@
+{
+  "Id": "variableset-LibraryVariableSets-141-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "OwnerId": "LibraryVariableSets-141-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "OwnerType": "LibraryVariableSet",
+  "Version": 1,
+  "Variables": [
+    {
+      "Id": "dc4ef98d-3da0-6ab3-4b86-f065254fecc3",
+      "Name": "LibrarySetSensitive",
+      "Description": null,
+      "Type": "Sensitive",
+      "Value": "MYvFyiIt1aUcvfiORB809w==|yhWcMW1ybrZob9u1mjQkPQ=="
+    },
+    {
+      "Id": "7f70bf5b-4fa2-d659-5ac2-72b7659f83d2",
+      "Name": "LibrarySetPlain",
+      "Description": null,
+      "Type": "String",
+      "Value": "hello_world"
+    }
+  ],
+  "SpaceId": "Spaces-1-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "RelatedDocumentIds": []
+}

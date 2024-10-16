@@ -1,5 +1,7 @@
 .idea/
 .vscode/
 
+export.html
+
 octopus-deploy-decryptor
 octopus-deploy-decryptor.exe

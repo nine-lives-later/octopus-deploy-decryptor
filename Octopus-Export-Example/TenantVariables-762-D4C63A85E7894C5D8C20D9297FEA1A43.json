@@ -1,0 +1,14 @@
+{
+  "Id": "TenantVariables-762-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "TenantId": "Tenants-21-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "OwnerId": "Projects-441-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "OwnerType": "Project",
+  "EnvironmentId": "Environments-1-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "VariableTemplateId": "e7b4256f-d3b5-4144-83d6-8374be19044a",
+  "SpaceId": "Spaces-1-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "Value": {
+    "SensitiveValue": "ex6y/n/pt1LCZ4LCtW65+1taM1ZUM7NZ6es/noGuj/0=|lh3U9I+qBk5R8lDjKdz2jw=="
+  },
+  "RelatedDocumentId": null,
+  "LastModified": "2024-10-11T11:25:59.8972549+00:00"
+}

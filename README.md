@@ -2,8 +2,8 @@
 
 This tool allows for decrypting projects exported from [Octopus Deploy](https://octopus.com).
 
-It also provides modules to this manually for to decrypt values
-form the database, using the master key.
+It creates an `export.html` report file, which reconstructs the project and variable structure.
+Sensitive/encrypted variable values are decrypted print as plain text in the report.
 
 ## Decrypting a Project Export
 

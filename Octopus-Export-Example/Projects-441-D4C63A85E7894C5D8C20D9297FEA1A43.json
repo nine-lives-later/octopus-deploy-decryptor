@@ -21,17 +21,39 @@
     "DeprovisioningRunbook": null
   },
   "DiscreteChannelRelease": false,
-  "IncludedLibraryVariableSetIds": [],
+  "IncludedLibraryVariableSetIds": [
+    "LibraryVariableSets-141-D4C63A85E7894C5D8C20D9297FEA1A43"
+  ],
   "UsedPackages": [],
-  "TenantedDeploymentMode": "Untenanted",
-  "Templates": [],
-  "ReleaseCreationStrategy": {
-    "ReleaseCreationPackage": null,
-    "ChannelId": null
-  },
+  "TenantedDeploymentMode": "TenantedOrUntenanted",
+  "Templates": [
+    {
+      "Id": "ff085a5b-9ed9-4379-a71f-f11e9e9a5b0a",
+      "Name": "TenantPlainText",
+      "Label": "",
+      "HelpText": null,
+      "DefaultValue": "plain_default",
+      "DisplaySettings": {
+        "Octopus.ControlType": "SingleLineText"
+      }
+    },
+    {
+      "Id": "e7b4256f-d3b5-4144-83d6-8374be19044a",
+      "Name": "TenantSensitive",
+      "Label": "",
+      "HelpText": null,
+      "DefaultValue": {
+        "SensitiveValue": "miEOe//HnxHqyAf/0V3Y06a8RwbT1rkWPHH0vHXtztc=|ttxE6JPEy6hP3jhGLRqslw=="
+      },
+      "DisplaySettings": {
+        "Octopus.ControlType": "Sensitive"
+      }
+    }
+  ],
+  "ReleaseCreationStrategy": null,
   "AutoDeployReleaseOverrides": [],
   "ExtensionSettings": [],
   "AllowIgnoreChannelRules": false,
-  "LastModified": "2024-10-08T07:45:45.2165252+00:00",
-  "DataVersion": "AAAAAAAIhPM="
+  "LastModified": "2024-10-15T17:22:02.6898503+00:00",
+  "DataVersion": "AAAAAAAIrVs="
 }

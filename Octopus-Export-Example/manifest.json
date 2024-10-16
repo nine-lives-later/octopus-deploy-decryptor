@@ -465,7 +465,7 @@
       "ExportType": "FullDocument",
       "DocumentSource": "Projects-441-D4C63A85E7894C5D8C20D9297FEA1A43.json",
       "ParentId": null,
-      "Hash": "90e3278482890fce56b7958e9d1fcf4e922b0a18"
+      "Hash": "83cac7d695617c99ca71744cda327d43d93ae8d0"
     },
     {
       "Id": "ProjectGroups-1-D4C63A85E7894C5D8C20D9297FEA1A43",
@@ -510,7 +510,7 @@
       "ExportType": "FullDocument",
       "DocumentSource": "variableset-Projects-441-D4C63A85E7894C5D8C20D9297FEA1A43.json",
       "ParentId": null,
-      "Hash": "15a863e5138b6c182bdf8206ea0a7be110a2be98"
+      "Hash": "c92a7a69c82bba52163f32e4b1988be7efad3e5e"
     },
     {
       "Id": "Environments-1-D4C63A85E7894C5D8C20D9297FEA1A43",
@@ -538,7 +538,52 @@
       "DocumentSource": "Lifecycles-1-D4C63A85E7894C5D8C20D9297FEA1A43.json",
       "ParentId": null,
       "Hash": "d6c369364d527d46a8bcbde2e683685dc13697c1"
+    },
+    {
+      "Id": "LibraryVariableSets-141-D4C63A85E7894C5D8C20D9297FEA1A43",
+      "Name": "ExampleLibrarySet",
+      "DocumentType": "LibraryVariableSet",
+      "ExportType": "FullDocument",
+      "DocumentSource": "LibraryVariableSets-141-D4C63A85E7894C5D8C20D9297FEA1A43.json",
+      "ParentId": null,
+      "Hash": "bc9275782b1570b306b8a805091dfaaa5839bd94"
+    },
+    {
+      "Id": "variableset-LibraryVariableSets-141-D4C63A85E7894C5D8C20D9297FEA1A43",
+      "Name": "Variables variableset-LibraryVariableSets-141-D4C63A85E7894C5D8C20D9297FEA1A43",
+      "DocumentType": "LibraryVariables",
+      "ExportType": "FullDocument",
+      "DocumentSource": "variableset-LibraryVariableSets-141-D4C63A85E7894C5D8C20D9297FEA1A43.json",
+      "ParentId": null,
+      "Hash": "b74ad9aa886a9d8a564c3dc8b3808581d51a0213"
+    },
+    {
+      "Id": "Tenants-21-D4C63A85E7894C5D8C20D9297FEA1A43",
+      "Name": "API Demo",
+      "DocumentType": "Tenant",
+      "ExportType": "FullDocument",
+      "DocumentSource": "Tenants-21-D4C63A85E7894C5D8C20D9297FEA1A43.json",
+      "ParentId": null,
+      "Hash": "121b4900c66ea2566f83798f8664fce2817a85a0"
+    },
+    {
+      "Id": "TenantVariables-761-D4C63A85E7894C5D8C20D9297FEA1A43",
+      "Name": "TenantVariables-761-D4C63A85E7894C5D8C20D9297FEA1A43",
+      "DocumentType": "TenantVariable",
+      "ExportType": "FullDocument",
+      "DocumentSource": "TenantVariables-761-D4C63A85E7894C5D8C20D9297FEA1A43.json",
+      "ParentId": null,
+      "Hash": "c35d60b8af0a9bf905446867915776d1c5bba68b"
+    },
+    {
+      "Id": "TenantVariables-762-D4C63A85E7894C5D8C20D9297FEA1A43",
+      "Name": "TenantVariables-762-D4C63A85E7894C5D8C20D9297FEA1A43",
+      "DocumentType": "TenantVariable",
+      "ExportType": "FullDocument",
+      "DocumentSource": "TenantVariables-762-D4C63A85E7894C5D8C20D9297FEA1A43.json",
+      "ParentId": null,
+      "Hash": "3f81cfd5405ad3f02d2857494115359eafbf08ff"
     }
   ],
-  "Hello": "GtoxXUnzUnBfMPNSX3bm2w==|lS4OTkwv/0HOKgUcyGc8Cg=="
+  "Hello": "JcafuSlkardd1a+m0w490A==|zk4im4KcPfopuCFadPYygg=="
 }

@@ -3,12 +3,12 @@ package main
 import (
 	"flag"
 	"fmt"
+	"github.com/nine-lives-later/octopus-deploy-decryptor/html"
 	"github.com/nine-lives-later/octopus-deploy-decryptor/pkg/decryptor"
-	"github.com/nine-lives-later/octopus-deploy-decryptor/pkg/variableset"
+	"github.com/nine-lives-later/octopus-deploy-decryptor/pkg/projectExport"
 	"log"
 	"os"
 	"regexp"
-	"strings"
 )
 
 var (
@@ -17,6 +17,7 @@ var (
 
 func mainInternal() error {
 	password := flag.String("password", "", "The password used when exporting the project.")
+	filename := flag.String("export-filename", "export.html", "The name of the HTML report file to generate.")
 	sensitiveOnly := flag.Bool("sensitive-only", false, "Only show sensitive variables.")
 
 	flag.Parse()
@@ -30,8 +31,10 @@ func mainInternal() error {
 		return fmt.Errorf("failed to derive key from password: %w", err)
 	}
 
-	// get all variable set files
-	log.Printf("Reading variable set files...")
+	// read all known entity types
+	log.Printf("Reading files...")
+
+	entities := make(projectExport.EntityMap)
 
 	files, err := os.ReadDir(".")
 	if err != nil {
@@ -43,41 +46,33 @@ func mainInternal() error {
 			continue
 		}
 
-		if !strings.HasPrefix(f.Name(), "variableset-") || !strings.HasSuffix(f.Name(), ".json") {
+		// read the entity
+		entity, err := projectExport.ReadEntity(f.Name())
+		if err != nil {
+			log.Printf("Ignoring file '%s': %s", f.Name(), err)
 			continue
 		}
 
-		setFilePath := f.Name()
-
-		log.Printf("File: %v", setFilePath)
-
-		// read the variables
-		set, err := variableset.ReadVariables(setFilePath)
-		if err != nil {
-			return fmt.Errorf("failed to read variable set file '%v': %w", setFilePath, err)
-		}
-
-		for _, v := range set {
-			if *sensitiveOnly && v.Type != "Sensitive" {
-				continue
-			}
-
-			val, err := v.DecryptedValue(key)
-			if err != nil {
-				log.Printf("Failed to decrypt variable '%v': %v", v.Name, err)
-			}
-
-			if len(v.Scope) > 0 {
-				scope := string(v.Scope)
-				scope = strings.ReplaceAll(scope, "\n", " ")
-				scope = scopeCleanupPattern.ReplaceAllString(scope, " ")
-
-				log.Printf("  Variable: %v = '%v' [scope: %+v]", v.Name, val, scope)
-			} else {
-				log.Printf("  Variable: %v = '%v' [scope: none]", v.Name, val)
-			}
+		if entity != nil {
+			entity.AddToEntityMap(entities)
 		}
 	}
+
+	log.Printf("Loaded %d entities.", len(entities))
+
+	// render the html report
+	content, err := html.RenderHTML(entities, key, *sensitiveOnly)
+	if err != nil {
+		return fmt.Errorf("failed render HTML report: %w", err)
+	}
+
+	log.Printf("Writing report to '%s'...", *filename)
+
+	err = os.WriteFile(*filename, []byte(content), 0644)
+	if err != nil {
+		return fmt.Errorf("failed render HTML report: %w", err)
+	}
+
 	return nil
 }
 

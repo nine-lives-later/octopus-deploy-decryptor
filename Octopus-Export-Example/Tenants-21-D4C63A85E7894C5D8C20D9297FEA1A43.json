@@ -1,0 +1,21 @@
+{
+  "Id": "Tenants-21-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "Name": "API Demo",
+  "ProjectEnvironments": {
+    "Projects-441-D4C63A85E7894C5D8C20D9297FEA1A43": [
+      "Environments-1-D4C63A85E7894C5D8C20D9297FEA1A43"
+    ]
+  },
+  "TenantTags": [],
+  "SpaceId": "Spaces-1-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "Slug": "api-demo",
+  "ClonedFromTenantId": null,
+  "Description": "",
+  "ProjectIds": [
+    "Projects-441-D4C63A85E7894C5D8C20D9297FEA1A43"
+  ],
+  "LogoAttachmentKey": "Tenants-21-2022031411583311",
+  "LogoAttachmentMimeType": "image/png",
+  "LastModified": "2024-10-11T11:24:22.3409213+00:00",
+  "DataVersion": "AAAAAAAIkI4="
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Octopus Deploy Export</title>
+</head>
+<body>
+  <!-- table of content -->
+  <h1>TOC</h1>
+  <ul>
+    {{ range .Projects }}
+      <li>
+        <a href="#{{ .ID }}">{{ .Name }}</a>
+      </li>
+    {{ end }}
+  </ul>
+
+  <!-- content: projects -->
+  {{ range .Projects }}
+    <a id="{{ .ID }}"><h1>Project: {{ .Name }}</h1></a>
+
+    <div>Space: {{ .SpaceID }}</div>
+    <div>ID: {{ .ID }}</div>
+
+
+    {{ if .ProjectVariableSet }}
+      <h2>Project Variables</h2>
+      <div>ID: {{ .ProjectVariableSet.ID }}</div>
+      <ul>
+        {{ range .ProjectVariableSet.Variables }}
+            <li><pre>{{ .Name }} = {{ .Value }}</pre></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+
+
+    {{ range .LibraryVariableSets }}
+      <h2>Library Set: {{ .Name }}</h2>
+      <div>ID: {{ .ID }}</div>
+      <ul>
+        {{ range .Variables }}
+            <li><pre>{{ .Name }} = {{ .Value }}</pre></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+
+  {{ end }}
+</body>
+</html>

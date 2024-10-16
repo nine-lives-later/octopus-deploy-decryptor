@@ -1,0 +1,12 @@
+{
+  "Id": "TenantVariables-761-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "TenantId": "Tenants-21-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "OwnerId": "Projects-441-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "OwnerType": "Project",
+  "EnvironmentId": "Environments-1-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "VariableTemplateId": "ff085a5b-9ed9-4379-a71f-f11e9e9a5b0a",
+  "SpaceId": "Spaces-1-D4C63A85E7894C5D8C20D9297FEA1A43",
+  "Value": "plain_custom",
+  "RelatedDocumentId": null,
+  "LastModified": "2024-10-11T11:25:59.8854043+00:00"
+}
